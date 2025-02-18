@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Weather App</h1>
+        <div class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <button id="themeToggle">🌙</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName">City Name</h2>
+            <img id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/10127/10127236.png" alt="Weather Icon">
+            <p id="temperature">--°C</p>
+            <p id="condition">--</p>
+            <div class="extra-details">
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Wind Speed: <span id="windSpeed">--</span> km/h</p>
+                <p>AQI: <span id="aqi">--</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
